@@ -18,6 +18,27 @@
     font-size: 20px;
     letter-spacing: 7px;
 }
+footer  {
+    background-color: rgb(48, 47, 47);
+    margin-top: 50px;
+}
+footer .container h5 {
+    color: white;
+}
+footer .container li a {
+    color: white;
+    border: 1px solid white;
+}
+footer .footer-copyright {
+    background-color: rgb(27, 27, 27);
+    color: white;
+}
+footer .footer-copyright a {
+    color: rgb(179, 176, 176);
+}
+.navbar .navbar-nav {
+    margin-left: 25%;
+}
 @media (max-width: 414px){
     .carousel-caption {
         display: block;

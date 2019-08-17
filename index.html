@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="about.css">
     </head>
     <body>
         <div class="container">
@@ -37,18 +38,74 @@
                             </li>
 
                             <li class="nav-item">
-                                    <a class="nav-link" href="#">About us</a>
+                                    <a class="nav-link" href="about.html">About us</a>
                             </li>
 
                             <li class="nav-item">
-                              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+                              <a class="nav-link" href="contact.html" tabindex="-1" aria-disabled="true">Contact</a>
                             </li>
 
                           </ul>
-                          <form class="form-inline my-2 my-lg-0">
+                          <!-- <form class="form-inline my-2 my-lg-0">
                             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                          </form>
+                          </form> -->
+
+                          <!--login-->
+                           <!--login-->
+                           <ul class="nav navbar-nav navbar-right ml-auto">			
+                              <li class="nav-item">
+                                  <a data-toggle="dropdown" class="nav-link dropdown-toggle" href="#">Login</a>
+                                  <ul class="dropdown-menu form-wrapper">					
+                                      <li>
+                                          <form action="/examples/actions/confirmation.php" method="post">
+                                              <p class="hint-text">Sign in with your social media account</p>
+                                              <div class="form-group social-btn clearfix">
+                                                  <a href="#" class="btn btn-primary pull-left"><i class="fa fa-facebook"></i> Facebook</a>
+                                                  <a href="#" class="btn btn-info pull-right"><i class="fa fa-twitter"></i> Twitter</a>
+                                              </div>
+                                              <div class="or-seperator"><b>or</b></div>
+                                              <div class="form-group">
+                                                  <input type="text" class="form-control" placeholder="Username" required="required">
+                                              </div>
+                                              <div class="form-group">
+                                                  <input type="password" class="form-control" placeholder="Password" required="required">
+                                              </div>
+                                              <input type="submit" class="btn btn-primary btn-block" value="Login">
+                                              <div class="form-footer">
+                                                  <a href="#">Forgot Your password?</a>
+                                              </div>
+                                          </form>
+                                      </li>
+                                  </ul>
+                              </li>
+                              <li class="nav-item" id="signUp">
+                                  <a href="#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle get-started-btn mt-1 mb-1">Sign up</a>
+                                  <ul class="dropdown-menu form-wrapper">					
+                                      <li>
+                                          <form action="/examples/actions/confirmation.php" method="post">
+                                              <p class="hint-text">Fill in this form to create your account!</p>
+                                              <div class="form-group">
+                                                  <input type="text" class="form-control" placeholder="Username" required="required">
+                                              </div>
+                                              <div class="form-group">
+                                                  <input type="password" class="form-control" placeholder="Password" required="required">
+                                              </div>
+                                              <div class="form-group">
+                                                  <input type="password" class="form-control" placeholder="Confirm Password" required="required">
+                                              </div>
+                                              <div class="form-group">
+                                                  <label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms &amp; Conditions</a></label>
+                                              </div>
+                                              <input type="submit" class="btn btn-primary btn-block" value="Sign up">
+                                          </form>
+                                      </li>
+                                  </ul>
+                              </li>
+                          </ul>
+
+                          <!--login-->
+
                         </div>
                       </nav>
         </div>
@@ -96,6 +153,124 @@
                   </a>
                 </div>
               </div>
+
+              <!-- Section: Testimonials v.1 -->      <!-- bootstrap -->
+<section class="text-center my-5 p-1">
+
+  <!-- Section heading -->
+  <h2 class="h1-responsive font-weight-bold my-5">TESTIMONIALS </h2>
+  <!-- Section description -->
+  <p class="dark-grey-text w-responsive mx-auto mb-5">Our goal is to make sure each and every customers is happy and satisfied with our
+    services.We aim to give you the worth of your money. This is what our customers have to say. Your opinion matters to us.</p>
+
+  <!-- Grid row -->
+  <div class="row">
+
+    <!--Grid column-->
+    <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
+      <!--Card-->
+      <div class="card testimonial-card">
+        <!--Background color-->
+        <div class="card-up info-color"></div>
+        <!--Avatar-->
+        <div class="avatar mx-auto white">
+          <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg" class="rounded-circle img-fluid">
+        </div>
+        <div class="card-body">
+          <!--Name-->
+          <h4 class="font-weight-bold mb-4">John Doe</h4>
+          <hr>
+          <!--Quotation-->
+          <p class="dark-grey-text mt-4"><i class="fas fa-quote-left pr-2"></i>"The best food I have ever had. Really happy with 
+            everything."</p>
+        </div>
+      </div>
+      <!--Card-->
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-lg-4 col-md-6 mb-md-0 mb-4">
+      <!--Card-->
+      <div class="card testimonial-card">
+        <!--Background color-->
+        <div class="card-up blue-gradient">
+        </div>
+        <!--Avatar-->
+        <div class="avatar mx-auto white">
+          <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg" class="rounded-circle img-fluid">
+        </div>
+        <div class="card-body">
+          <!--Name-->
+          <h4 class="font-weight-bold mb-4">Anna Aston</h4>
+          <hr>
+          <!--Quotation-->
+          <p class="dark-grey-text mt-4"><i class="fas fa-quote-left pr-2"></i>"This deserves more than five stars. The best 
+            in you could think of."</p>
+        </div>
+      </div>
+      <!--Card-->
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-lg-4 col-md-6">
+      <!--Card-->
+      <div class="card testimonial-card">
+        <!--Background color-->
+        <div class="card-up indigo"></div>
+        <!--Avatar-->
+        <div class="avatar mx-auto white">
+          <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(10).jpg" class="rounded-circle img-fluid">
+        </div>
+        <div class="card-body">
+          <!--Name-->
+          <h4 class="font-weight-bold mb-4">Maria Kate</h4>
+          <hr>
+          <!--Quotation-->
+          <p class="dark-grey-text mt-4"><i class="fas fa-quote-left pr-2"></i>"Delicous food, variety of dishes. 
+            Just wanna order everything on the menu."</p>
+        </div>
+      </div>
+      <!--Card-->
+    </div>
+    <!--Grid column-->
+
+  </div>
+  <!-- Grid row -->
+
+</section>
+<!-- Section: Testimonials  -->
+
+
+<!-- Footer -->
+<footer class="page-footer font-small unique-color-dark pt-4">
+
+    <!-- Footer Elements -->
+    <div class="container">
+  
+      <!-- Call to action -->
+      <ul class="list-unstyled list-inline text-center py-2">
+        <li class="list-inline-item">
+          <h5 class="mb-1">Register for free</h5>
+        </li>
+        <li class="list-inline-item">
+          <a href="#!" class="btn btn-outline-white btn-rounded">Sign up!</a>
+        </li>
+      </ul>
+      <!-- Call to action -->
+  
+    </div>
+    <!-- Footer Elements -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+      <a href="https://mamindesigns.com/"> mamindesigns.com</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
         
         <script src="js/bootstrap.min.js" async defer></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

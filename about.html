@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>My Pizza Shop</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="about.css">
+        <!--links for login form-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript">
+        // Prevent dropdown menu from closing when click inside the form
+        $(document).on("click", ".navbar-right .dropdown-menu", function(e){
+            e.stopPropagation();
+        });
+    </script>
+    
+</head>
+    <body>
+        <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <a class="navbar-brand" href="index.html">MaminPizza</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                      
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="navbar-nav mr-auto">
+
+                            <li class="nav-item">
+                              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Order Now
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="menu.html">Pizza</a> <!--create menu page with 3 sections for pizzas, drinks & sides -->
+                                <a class="dropdown-item" href="menu.html">Drinks</a> <!--link to menu page - middle to drinks with id -->
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="menu.html">Sides</a> <!--link to menu page bottom-->
+                              </div>
+                            </li>
+
+                            <li class="nav-item active">
+                                    <a class="nav-link" href="#">About us</a>
+                            </li>
+
+                            <li class="nav-item">
+                              <a class="nav-link" href="contact.html" tabindex="-1" aria-disabled="true">Contact</a>
+                            </li>
+
+                          </ul>
+                          <!-- <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                          </form> -->
+
+                          <!--login-->
+                          <ul class="nav navbar-nav navbar-right ml-auto">			
+                                <li class="nav-item">
+                                    <a data-toggle="dropdown" class="nav-link dropdown-toggle" href="#">Login</a>
+                                    <ul class="dropdown-menu form-wrapper">					
+                                        <li>
+                                            <form action="/examples/actions/confirmation.php" method="post">
+                                                <p class="hint-text">Sign in with your social media account</p>
+                                                <div class="form-group social-btn clearfix">
+                                                    <a href="#" class="btn btn-primary pull-left"><i class="fa fa-facebook"></i> Facebook</a>
+                                                    <a href="#" class="btn btn-info pull-right"><i class="fa fa-twitter"></i> Twitter</a>
+                                                </div>
+                                                <div class="or-seperator"><b>or</b></div>
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="Username" required="required">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="password" class="form-control" placeholder="Password" required="required">
+                                                </div>
+                                                <input type="submit" class="btn btn-primary btn-block" value="Login">
+                                                <div class="form-footer">
+                                                    <a href="#">Forgot Your password?</a>
+                                                </div>
+                                            </form>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item" id="signUp">
+                                    <a href="#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle get-started-btn mt-1 mb-1">Sign up</a>
+                                    <ul class="dropdown-menu form-wrapper">					
+                                        <li>
+                                            <form action="/examples/actions/confirmation.php" method="post">
+                                                <p class="hint-text">Fill in this form to create your account!</p>
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" placeholder="Username" required="required">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="password" class="form-control" placeholder="Password" required="required">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="password" class="form-control" placeholder="Confirm Password" required="required">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms &amp; Conditions</a></label>
+                                                </div>
+                                                <input type="submit" class="btn btn-primary btn-block" value="Sign up">
+                                            </form>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                        </div>
+                      </nav>
+        </div>
+
+        <!-- Footer -->
+<footer class="page-footer font-small unique-color-dark pt-4">
+
+        <!-- Footer Elements -->
+        <div class="container">
+      
+          <!-- Call to action -->
+          <ul class="list-unstyled list-inline text-center py-2">
+            <li class="list-inline-item">
+              <h5 class="mb-1">Register for free</h5>
+            </li>
+            <li class="list-inline-item">
+              <a href="#!" class="btn btn-outline-white btn-rounded">Sign up!</a>
+            </li>
+          </ul>
+          <!-- Call to action -->
+      
+        </div>
+        <!-- Footer Elements -->
+      
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+          <a href="https://mamindesigns.com/"> mamindesigns.com</a>
+        </div>
+        <!-- Copyright -->
+      
+      </footer>
+      <!-- Footer -->
+            
+            <script src="js/bootstrap.min.js" async defer></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        </body>
+    </html>
