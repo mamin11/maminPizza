@@ -39,6 +39,12 @@ footer .footer-copyright a {
 .navbar .navbar-nav {
     margin-left: 25%;
 }
+
+#testimonialSection .row {
+    /*  margin was creating horizontal scroll bar*/
+    margin: 0px;
+}
+
 @media (max-width: 414px){
     .carousel-caption {
         display: block;
